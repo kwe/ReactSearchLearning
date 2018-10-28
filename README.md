@@ -1,2 +1,0 @@
-# ReactSearchLearning
-Created with CodeSandbox
