@@ -1,5 +1,24 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { withStyles } from "@material-ui/core/styles";
+import GridList from "@material-ui/core/GridList";
+import GridListTile from "@material-ui/core/GridListTile";
+const styles = theme => ({
+  root: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    overflow: "hidden",
+    backgroundColor: theme.palette.background.paper
+  },
+  gridList: {
+    width: 500,
+    height: 450
+  },
+  subheader: {
+    width: "100%"
+  }
+});
 
 class SearchResults extends Component {
   constructor(props) {
